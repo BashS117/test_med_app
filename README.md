@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# grihf-frontend_capstone_starter_code
+frontend_capstone_starter_code
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Medical Appointment Booking Website
+This project is part of the "grihf-frontend_capstone_starter_code" and aims to create a responsive and user-friendly website for booking medical appointments. The application allows users to search for doctors, view available appointment slots, and book appointments online.
 
-## Available Scripts
+Features
+User Authentication: Sign up and log in for patients.
+Doctor Search: Users can search for doctors by specialization, location, and availability.
+Appointment Booking: Patients can book appointments based on doctor availability.
+Responsive Design: The website is fully responsive and works across multiple devices.
+Appointment History: Patients can view their past and upcoming appointments.
+Prerequisites
+To run this project locally, ensure you have the following tools installed:
 
-In the project directory, you can run:
+Node.js (version X.X.X or later)
+NPM (Node Package Manager) or Yarn
+Git (for version control)
+Any preferred code editor like VS Code
+Installation
+Clone the repository:
 
-### `npm start`
+bash
+Copiar código
+git clone https://github.com/your-repo/grihf-frontend_capstone_starter_code.git
+Navigate to the project directory:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copiar código
+cd grihf-frontend_capstone_starter_code
+Install dependencies: Using NPM:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+bash
+Copiar código
+npm install
+Or using Yarn:
 
-### `npm test`
+bash
+Copiar código
+yarn install
+Start the development server:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+bash
+Copiar código
+npm run dev
+Open the application: The application will be available at http://localhost:3000.
 
-### `npm run build`
+Project Structure
+src/: Contains the core code of the application.
+components/: Reusable React components.
+pages/: Each page of the website (e.g., Home, Doctor Search, Appointment Booking).
+services/: API calls and service integrations.
+styles/: Global CSS and Tailwind configurations.
+public/: Static assets such as images and favicon.
+Technology Stack
+React.js: For building user interfaces.
+Tailwind CSS: For styling the application.
+Vite: A fast development build tool for modern web projects.
+Firebase: (optional) For managing user authentication and data storage.
+Deployment
+To deploy the project:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Build the project for production:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bash
+Copiar código
+npm run build
+Deploy the dist/ folder to your preferred hosting provider (e.g., Netlify, Vercel, Firebase Hosting).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Contributing
+If you wish to contribute to this project:
 
-### `npm run eject`
+Fork the repository.
+Create a new branch:
+bash
+Copiar código
+git checkout -b feature-branch
+Make your changes and commit:
+bash
+Copiar código
+git commit -m "Add your message here"
+Push your changes:
+bash
+Copiar código
+git push origin feature-branch
+Submit a pull request.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Notes
+Ensure you follow the best practices for React component design.
+Use environment variables for sensitive data (e.g., API keys).
+Make sure to run tests before submitting a pull request.
