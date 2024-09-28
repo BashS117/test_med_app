@@ -28,6 +28,7 @@ nav {
     position: relative;
     cursor: pointer;
 }
+
 /* Display dropdown menu on hover */
 .welcome-user:hover .dropdown-menu {
     display: block;
