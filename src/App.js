@@ -7,7 +7,14 @@ import Login from './Components/Login/Login';
 import Sign_Up from './Components/Sign_Up/Sign_Up';
 import InstantConsultation from './Components/InstantConsultationBooking/InstantConsultation'
 import Notification from './Components/Notification/Notification';
+import ReviewForm from './Components/ReviewForm/ReviewForm';
 function App() {
+
+    const reviewsData = [
+        { doctorName: 'Dr. John Doe', doctorSpeciality: 'Cardiology', reviewGiven: true },
+        { doctorName: 'Dr. Jane Smith', doctorSpeciality: 'Dermatology', reviewGiven: false }
+    ];
+
   return (
    <div className='App'>
     <BrowserRouter>
@@ -23,6 +30,7 @@ function App() {
             <Route path="/instant-consultation" element={<InstantConsultation />} />
 
           </Routes>
+          <ReviewForm reviews={reviewsData} />
           </Notification>
         </BrowserRouter>
    </div>
