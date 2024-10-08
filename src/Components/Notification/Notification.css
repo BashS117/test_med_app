@@ -1,0 +1,9 @@
+.appointment-card__content{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.appointment-card{
+    display: flex;
+    justify-content: center;
+}

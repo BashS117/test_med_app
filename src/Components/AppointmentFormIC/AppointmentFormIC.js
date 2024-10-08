@@ -22,12 +22,16 @@ const AppointmentFormIC = ({ doctorName, doctorSpeciality, onSubmit }) => {
         if (Object.keys(formErrors).length > 0) {
             setErrors(formErrors);
         } else {
-            onSubmit({ name, phoneNumber, appointmentDate, selectedSlot });
+            const appointmentData = { name, phoneNumber, appointmentDate, selectedSlot };
+            onSubmit(appointmentData);
             setName('');
             setPhoneNumber('');
             setAppointmentDate('');
             setSelectedSlot('');
             setErrors({});
+            const doctorData = { name: doctorName, speciality: doctorSpeciality };
+        localStorage.setItem('doctorData', JSON.stringify(doctorData));
+        localStorage.setItem(doctorName, JSON.stringify(appointmentData));
         }
     };
 

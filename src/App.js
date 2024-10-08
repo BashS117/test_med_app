@@ -6,12 +6,14 @@ import Navbar from './Components/Navbar/Navbar';
 import Login from './Components/Login/Login';
 import Sign_Up from './Components/Sign_Up/Sign_Up';
 import InstantConsultation from './Components/InstantConsultationBooking/InstantConsultation'
+import Notification from './Components/Notification/Notification';
 function App() {
   return (
    <div className='App'>
     <BrowserRouter>
           {/* Display the Navbar component */}
-          <Navbar/>
+          {/* <Navbar/> */}
+          <Notification>
           {/* Set up the Routes for different pages */}
           <Routes>
             {/* Define individual Route components for different pages */}
@@ -21,6 +23,7 @@ function App() {
             <Route path="/instant-consultation" element={<InstantConsultation />} />
 
           </Routes>
+          </Notification>
         </BrowserRouter>
    </div>
   );
