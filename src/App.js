@@ -11,8 +11,8 @@ import ReviewForm from './Components/ReviewForm/ReviewForm';
 function App() {
 
     const reviewsData = [
-        { doctorName: 'Dr. John Doe', doctorSpeciality: 'Cardiology', reviewGiven: true },
-        { doctorName: 'Dr. Jane Smith', doctorSpeciality: 'Dermatology', reviewGiven: false }
+        { doctorName: 'Dr. John Doe', doctorSpeciality: 'Cardiology', reviewGiven: true, reviewDetails: {name:'', review: '', rating: ''} },
+        { doctorName: 'Dr. Jane Smith', doctorSpeciality: 'Dermatology', reviewGiven: false, reviewDetails: {name:'', review: '', rating: ''} }
     ];
 
   return (
