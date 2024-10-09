@@ -1,8 +1,12 @@
-
+.form-review{
+    background-color: #f0eeee;
+    padding: 8px;
+    border-radius: 8px;
+}
 
 .rating-stars {
     margin-bottom: 15px;
-    text-align: center;
+    text-align: start;
 }
 
 .rating-stars .stars {

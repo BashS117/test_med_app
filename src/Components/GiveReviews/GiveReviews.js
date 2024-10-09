@@ -59,7 +59,7 @@ function GiveReviews({onSubmitReview}) {
           }} >Click Here</button>
       ) : (
         // Display form for giving feedback
-        <form onSubmit={handleSubmit}>
+        <form className='form-review' onSubmit={handleSubmit}>
           <h2>Give Your Feedback</h2>
           {/* Display warning message if not all fields are filled */}
           {showWarning && <p className="warning">Please fill out all fields.</p>}
