@@ -11,6 +11,10 @@ const Navbar = () => {
 
   const handleClick = () => setClick(!click);
 
+ // Función para alternar el dropdown
+  const toggleDropdown = () => setShowDropdown(!showDropdown);
+
+
   const handleLogout = () => {
     sessionStorage.removeItem("auth-token");
     sessionStorage.removeItem("name");
@@ -65,11 +69,20 @@ const Navbar = () => {
       
         {isLoggedIn ? (
           <>
-            <li className="link" style={{ display: 'flex', alignItems: 'center' }}>
+            <li className="link" style={{ display: 'flex', alignItems: 'center', position: 'relative' }}>
               {/* Display username next to logout button */}
-              <span className="username" style={{ marginRight: '10px', fontWeight: 'bold', textWrap: "nowrap" }}>
+              <button onClick={toggleDropdown} className="username" style={{ marginRight: '10px', fontWeight: 'bold', textWrap: "nowrap" }}>
                 Welcome, {username}
-              </span>
+              </button>
+              {showDropdown?<div style={{display:'flex', flexDirection:'column', position: 'absolute', bottom: '-50px', background: 'white', boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.1)'}}>
+                <Link to='./profile-card'>
+                Your Profile
+                </Link>
+                <Link to='./profile-card'>
+                Your Reports
+                </Link>
+
+              </div>:null}
               <button className="btn2" onClick={handleLogout}>
                 Logout
               </button>
