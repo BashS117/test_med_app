@@ -1,11 +1,14 @@
 .profile-card {
-    max-width: 400px;
+    max-width: auto;
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #f9f9f9;
     text-align: center;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
   }
   
   .profile-card h2 {
