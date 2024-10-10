@@ -78,7 +78,7 @@ const Navbar = () => {
                 <Link to='./profile-card'>
                 Your Profile
                 </Link>
-                <Link to='./profile-card'>
+                <Link to='./reports'>
                 Your Reports
                 </Link>
 
