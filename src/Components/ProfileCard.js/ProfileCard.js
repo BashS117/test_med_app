@@ -10,7 +10,7 @@ function ProfileCard() {
 
   return (
     <div className="profile-card">
-     <div>
+     <div className='profile-container'>
          <h2>User Profile</h2>
       {authToken ? (
         <div className="profile-details">
