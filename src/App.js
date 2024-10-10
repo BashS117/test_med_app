@@ -9,6 +9,7 @@ import InstantConsultation from './Components/InstantConsultationBooking/Instant
 import Notification from './Components/Notification/Notification';
 import ReviewForm from './Components/ReviewForm/ReviewForm';
 import ProfileCard from './Components/ProfileCard.js/ProfileCard';
+import ReportsLayout from './Components/ReportsLayout/ReportsLayout';
 function App() {
 
     const reviewsData = [
@@ -30,6 +31,7 @@ function App() {
             <Route path="/Sign_Up" element={<Sign_Up/>}/>
             <Route path="/instant-consultation" element={<InstantConsultation />} />
             <Route path="/profile-card" element={<ProfileCard />} />
+            <Route path="/reports" element={<ReportsLayout />} />
 
           </Routes>
           <ReviewForm reviews={reviewsData} />
